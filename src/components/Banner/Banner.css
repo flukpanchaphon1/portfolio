@@ -1,0 +1,60 @@
+#banner {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+.contents-banner {
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  min-width: 50%;
+  margin-left: 10%;
+}
+.contents-banner > p:first-child {
+  font-weight: 500;
+  font-size: 24px;
+  user-select: none;
+
+  margin: 0;
+  margin-bottom: -20px;
+}
+.main-text-banner {
+  font-weight: 700;
+  font-size: 75px;
+  padding: 0;
+  margin: 0;
+}
+.container-jobs{
+  background-color: #5214FF;
+  padding: .5rem 1.5rem;
+  max-width: max-content;
+}
+.banner-jobs{
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+}
+
+.banner-jobs{
+    overflow: hidden;
+    border-right: .1em solid #fff;
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+  }

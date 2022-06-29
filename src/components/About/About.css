@@ -1,0 +1,77 @@
+.title-section {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.fname {
+  position: absolute;
+  top: 0;
+  font-weight: 700;
+  font-size: 96px;
+  z-index: 1;
+}
+.lname {
+  position: absolute;
+  top: 15%;
+  font-weight: 700;
+  font-size: 96px;
+  z-index: 1;
+}
+.jobs {
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  color: transparent;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  -webkit-text-stroke: 2px #5214ff;
+  user-select: none;
+  z-index: 1;
+}
+.jobs:hover {
+  color: #5214ff;
+}
+.based-in {
+  position: absolute;
+  top: calc(20% + 5px);
+  right: 20%;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  color: #5214ff;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all .3s ease;
+}
+.based-in.active{
+  transform: translateY(0);
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.container-desc {
+  position: absolute;
+  top: 50%;
+  left: calc(5% + 20px);
+  color: #fff;
+  background-color: #5214ff;
+  width: max-content;
+  padding: 2rem 4rem 2rem 8rem;
+  z-index: 1;
+}
+.bg-txt {
+  position: absolute;
+  right: 0;
+  bottom: 0.5em;
+  margin: 0;
+  font-weight: 800;
+  font-size: 128px;
+  color: rgba(0, 0, 0, 0.1);
+  user-select: none;
+  pointer-events: none;
+  z-index: -1;
+}

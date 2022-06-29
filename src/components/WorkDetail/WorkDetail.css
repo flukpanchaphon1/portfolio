@@ -1,0 +1,23 @@
+#data-work-hover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    transition: all .2s linear;
+    box-shadow: 0 0 80px -5px rgba(0, 0, 0, .5);
+    animation: trasitionImg .5s ease;
+    padding: 1.2rem;
+    background-color: white;
+}
+
+#data-work-hover img{
+    max-width: 25vw;
+}
+
+@keyframes trasitionImg {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

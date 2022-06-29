@@ -1,0 +1,27 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
+  width: 100%;
+  z-index: 999;
+  transition: all 600ms ease;
+}
+#header.hide{
+  top: -100px;
+  transition: all 600ms ease;
+}
+
+#logo-site {
+  font-weight: 800;
+  font-size: 24px;
+
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+}

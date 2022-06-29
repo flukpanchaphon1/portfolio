@@ -1,0 +1,111 @@
+#toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  z-index: 999;
+}
+
+#hamburger div {
+  content: "";
+  display: block;
+
+  width: 30px;
+  height: 3px;
+  background-color: #c4c4c4;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  transform-origin: center;
+
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+#hamburger div:nth-child(1) {
+  margin-top: -3px;
+}
+#hamburger div:nth-child(2) {
+  margin-top: 3px;
+}
+
+#hamburger.active div {
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+#hamburger.active div:nth-child(1) {
+  margin-top: 0;
+  transform: translate(-50%) rotate(-45deg);
+}
+#hamburger.active div:nth-child(2) {
+  margin-top: 0;
+  transform: translate(-50%) rotate(45deg);
+}
+
+/* Animation toggle*/
+#toggle {
+  transition: all .5s ease;
+}
+#toggle.hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+#hamburger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+#hamburger::before,
+#hamburger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+#hamburger::before {
+  background-color: #5214ff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+#hamburger::after {
+  background-color: #000;
+  z-index: -1;
+  clip-path: circle(110% at center top);
+  transition: all 0.3s ease-in;
+}
+#hamburger:hover::after {
+  clip-path: circle(50% at center -50%);
+  transition: all 0.3s ease-in;
+  transform: scale(1.2);
+}
+#hamburger:hover::before {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in;
+}
+
+#hamburger.active::after {
+  background-color: #000;
+  z-index: -1;
+  clip-path: circle(50% at center -50%);
+  transition: all 0.3s ease-in;
+}
+#hamburger.active::before {
+  transition: all 0.3s ease-in;
+}

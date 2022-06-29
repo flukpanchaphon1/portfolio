@@ -1,0 +1,35 @@
+#myProject {
+  position: relative;
+}
+#myProject > div{
+  max-width: 100%;
+  overflow: hidden;
+}
+.section-my-project-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  color: #000;
+  user-select: none;
+}
+#myProject .container-item{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+#myProject .container-item{
+  margin-left: -10%;
+}
+
+#myProject .container-item video, #myProject .container-item img{
+ max-width: calc(25% + 20px);
+}
+
+.work-show-detail{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
